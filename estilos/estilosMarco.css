@@ -1,0 +1,224 @@
+#pagina  {
+	
+	/*El sitio ocupa el 90% y está centrado en el eje horizontal*/
+	width: 90%;
+	margin: 0 auto;
+
+	background-color: #CCC;
+
+}
+
+
+#titulo {
+	
+	background-image: url(../assets/textura2.jpg);
+	background-size: 350px;
+	background-color: #FFF;
+	width: 100%;
+
+	/*Es necesario colocar el height, si no desaparece esta barra*/
+	height: 100px;
+	float: left;
+
+	/*Se crea la barra movil*/
+	position:fixed;
+	left:0px;
+	top: 0px;
+
+	/*Crea la linea inferior*/
+	border-bottom: 4px solid #999;
+
+}
+
+
+#boxMenu {
+	/*Este 23% + 77% de boxPrincipal hacen el 100% en horizntal de la Página*/
+	width: 23%;
+	float: left;
+}
+
+#boxPrincipal {	
+	width: 77%;
+	float: left;
+}
+
+
+#boxMenu, #boxPrincipal{
+	/*Separación de la barra que contiene el titulo*/
+	margin-top:98px;
+}
+
+
+#boxDatos {
+	width: 100%;
+	height: 50px;
+	background-color: #999;
+
+	/*NO permite que los elementos floten, si se quita, el fondo de Página se pierde*/
+	clear:both;
+}	
+	
+
+
+#menu {
+	
+	width: 96%;
+	background-color: #F2F2F2;
+
+	margin: 10px auto 0px;
+}
+
+#principal {
+	
+	width:98%;
+	background-color:rgba(255, 255, 255, 0.7);
+	margin-top:10px;
+
+	/*Separación con el menu*/
+	margin-left:auto;
+	margin-right:auto;
+
+	/*Separación al final*/
+	padding-bottom: 7px;
+	margin-bottom: 10px;
+}	
+
+#menu, #principal{
+	border-radius:15px;
+}
+
+
+
+body {
+	
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+
+p {
+	
+	text-align: justify;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 11pt;
+}
+
+
+#menu h2, #principal h2{
+
+	/* Color de Colorzilla */
+
+	background: rgb(169,219,128); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(169,219,128,1) 0%, rgba(150,197,111,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(169,219,128,1) 0%,rgba(150,197,111,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+
+	color: #000000;
+
+	/*Acomoda los bordes*/
+	border-radius: 15px 15px 0px 0px;
+
+	/*Borde del Sub Titulo*/
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+
+    /*border-bottom: solid 3px #FFCC00 simplifica: 
+
+		border-width: thin;
+	    border-style: solid;
+	    border-color: #000;
+
+	    Sin embargo el borde solo es colocado en la parte inferior
+
+    */
+
+    padding: 0px;
+	text-align:center;
+
+	/*rem es una unidad que tiene una equivalencia en px, la cual depende del navegador. Generalmente suele ser 1rem = 16px*/
+	font-size: 1.5rem;
+
+	/*Altura del contenedor que tiene el sub-titulo*/
+	line-height: 2.8rem;
+
+	margin: 0px 0px 5px 0px;
+	/*ARRIBA, IZQUIERDA,ABAJO,DERECHA*/
+
+
+	font-family:"BankGothic Md BT", Tahoma, "Arial Black";
+
+
+}
+
+
+#titulo h1 {
+
+	text-align: center;
+	color: #fff;
+
+	font-family:"BankGothic Md BT", Tahoma, "Arial Black";
+
+}
+
+
+#menu ul {
+
+	margin: 0px;
+	padding: 0px;
+
+	/*Quita los puntos de la lista*/
+	list-style-type: none;
+}
+
+#menu li a{
+	
+    display: block;
+    background-image: url(../assets/arandela.svg);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+
+    color: #999;
+    font-weight: bold;
+
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-size: 35px auto;
+
+    /*Quita el subrayado de los links*/
+    text-decoration: none;
+
+    /*Tiempo de transición*/
+	transition: all ease-in 0.3s;
+}
+
+#menu li a:hover {
+	
+	/*Color del texto*/
+	color: #666;
+	background-size: 700%;
+
+}
+
+#ultimaEleccion{
+	/*Para agregar un redondeado diferente en la última opción*/
+	border-radius:0px 0px 10px 10px;
+}
+
+
+#box5,#box6,#box7{
+
+	background-color: #F2F2F2;
+	display: block;
+	width:32.7%;
+	height: 35px;
+	margin-top: 10px;
+	margin-right: 5px;
+	float: left;
+	border-radius:5px 5px;
+	list-style-type: none;
+}
