@@ -1,2 +1,1 @@
-# maquetaHTML
-Proyecto de Interacción
+# Interacción Humano Computador
